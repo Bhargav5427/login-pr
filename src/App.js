@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Login from './login-pages/Login';
 import Product from './Products/Product';
 import Addproduct from './Products/Addproduct';
+import ViewProduct from './Products/ViewProduct';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/ForgotPassword/*" element={<ForgotPassword />} />
         <Route path="/SignUp/*" element={<Signup />} />
         <Route path="/Addproduct" element={<Addproduct />} />
+        <Route path="/viewProduct" element={<ViewProduct />} />
       </Routes>
     </>
   )

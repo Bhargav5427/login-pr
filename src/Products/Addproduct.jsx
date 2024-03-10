@@ -1,5 +1,4 @@
 import React, { useRef } from 'react'
-import { useState } from 'react';
 import axios from 'axios'
 
 const Addproduct = () => {
@@ -18,12 +17,9 @@ const Addproduct = () => {
             price: price.current.value,
             expiry: expiry.current.value
         }
-        if (img == "" && name == "" && quantity=="" && price=="" && expiry=="") {
-            alert("Please fill all fields")
-        } else {
-            axios.post('http://localhost:3001/addProduct', Productdata)
-            window.location.reload()
-        }
+
+        axios.post("http://localhost:3001/product" , Productdata)
+        window.location.reload()
     }
     return (
         <>
